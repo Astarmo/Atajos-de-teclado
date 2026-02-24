@@ -1,4 +1,4 @@
-# Keyboard-Shortcuts
+# Atajos-de-teclado
 A program to type personalized symbols.
 
 You can create your own keyboard shortcuts writing them down at shortcuts.txt file. This file must comply with the following structure (example in quotes):
