@@ -270,7 +270,7 @@ make_gui(hotstringsFilePath) {
 
     goo := Gui("+Resize", "h" height)
     goo.BackColor := 0xE0E0E0
-    goo.Title := "Notación Matemática"
+    goo.Title := "Atajos de teclado"
     goo.separacionEntreColumnas := goo.separacionEntreCheckboxes := 0
     separacionEntreColumnas := 20
     separacionEntreCheckboxes := 20
@@ -340,12 +340,12 @@ make_gui(hotstringsFilePath) {
     return
 
     isAutoStartEnabled() {
-        startupLnk := A_Startup "\Notación Matemática.lnk"
+        startupLnk := A_Startup "\Atajos de teclado.lnk"
         return FileExist(startupLnk) != "" ? 1 : 0
     }
 
     toggleAutoStart(enable) {
-        startupLnk := A_Startup "\Notación Matemática.lnk"
+        startupLnk := A_Startup "\Atajos de teclado.lnk"
         scriptPath := A_ScriptFullPath
         if enable {
             FileCreateShortcut(scriptPath, startupLnk, , "auto")
